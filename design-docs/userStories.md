@@ -34,27 +34,15 @@ building new connections and working together to strengthen their communities.
   * [ ] Their user credentials are stored to authenticate their session
   * [ ] They arrive at the relevant `Dashboard page`
 * [ ] When an **individual** arrives at the `Individual dashboard page`:
-  * [ ] The user **can see** the following things:
-    * [ ] If they have **NOT** created a `Individual profile`:
-      * TODO
-    * [ ] If they **HAVE** created a `Individual profile`:
-      * TODO
+  * [ ] The user **can see** the following things in the `Main content area`:
+    * TODO
   * [ ] The user **can do** the following things:  
-    * [ ] If they have **NOT** created a `Individual profile`:
-      * TODO
-    * [ ] If they **HAVE** created a `Individual profile`:
-      * TODO
+    * TODO
 * [ ] When a **non-profit** arrives at their `Organization dashboard page`:
-  * [ ] The non-profit **can see** the following things:
-    * [ ] If they have **NOT** created a `Organization profile`:
-      * TODO
-    * [ ] If they **HAVE** created a `Organization profile`:
-      * TODO
-  * [ ] The user **can do** the following things:  
-    * [ ] If they have **NOT** created a `Organization profile`:
-      * TODO
-    * [ ] If they **HAVE** created a `Organization profile`:
-      * TODO
+  * [ ] The non-profit **can see** the following things in the `Main content area`:
+    * TODO
+  * [ ] The user **can do** the following things in the `Main content area`:  
+    * TODO
 
 ## Element definitions
 
@@ -66,13 +54,13 @@ building new connections and working together to strengthen their communities.
         (either individual or non-profit)
   * Contains:
     * Three primary content areas:
-      * The `header bar`:
+      * The `Header bar`:
         * Is:
           * A horizontal bar across the top of the screen
         * Contains:
           * The site title/logo
           * The `Utilities menu`
-      * The `sideBar menu`:
+      * The `Sidebar menu`:
         * Is:
           * A responsive menu (reduceds to collapse/expand icon on small screens)
           * On large screens:
@@ -80,9 +68,18 @@ building new connections and working together to strengthen their communities.
         * Contains:
           * The following list of actions a user can take to interact with the app:
             * Individual actions:
-              * TODO
+              * View/edit profile
+              * Browse/search non-profits
+              * Browse/search board openings
             * Organization actions:
-              * TODO
+              * View/edit profile
+              * Manage openings
+              * Browse/search individuals
+      * The `Main content area`:
+        * Is:
+          * The bulk of the viewport, minus the `Header bar` and `Sidebar menu`.
+        * Contains:
+          * The user's selected data view and data manipulation UI elements
 * The `Utilities menu`:
   * Is:
     * A responsive menu (reduces to collapse/expand icon on small screens)
@@ -142,3 +139,23 @@ building new connections and working together to strengthen their communities.
       * TODO
     * Matching characteristics:
       * TODO
+
+
+## Scratchpad: Misc. thoughts & notes
+
+When a user arrives at their dashboard, they should see summaries of each of
+the key components of the site, and clear CTAs for the primary actions they
+can take in each section.
+
+* Key sections:
+  * Individuals
+  * Organizations
+  * Openings
+
+For each of the key sections, individuals can see:
+* Short version of their profile
+  * And an "edit profile" button
+* Featured organizations (5?)
+  * And a "browse organizations" button
+* Featured open positions (5?)
+*   And a "Browse openings" button
