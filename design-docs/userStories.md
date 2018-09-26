@@ -95,10 +95,50 @@ building new connections and working together to strengthen their communities.
     * A JSON object
     * Stored as a document in the app's MongoDB
   * Contains:
-    * TODO
+    * Identity:
+      * First name
+      * Last name
+      * Title
+    * Contact information:
+      * Email address(es):
+        * For each:
+          * Primary address? (boolean)
+          * Email address
+          * Email type (work, personal)
+      * Phone number(s):
+        * For each: 
+          * Primary number? (boolean)
+          * Phone number
+          * Phone type (Work, mobile, home)
+    * Summary statement
+      * TODO
+    * Professional experience
+      * TODO
+    * Community service experience
+      * TODO
+    * Matching characteristics:
+      * TODO
 * An `Organization profile`:
   * Is:
     * A JSON object
     * Stores as a document in the app's MongoDB
   * Contains:
-    * TODO
+    * Identity:
+      * Organization name
+      * Organization type
+        * 501(c)3, unincorporated, etc.
+    * Contact information:
+      * Website
+      * Mailing address
+      * Phone number
+      * Email address
+      * Primary contact:
+        * First name
+        * Last name
+        * Title
+    * Summary statement
+      * TODO
+    * Primary activities
+      * TODO
+    * Matching characteristics:
+      * TODO
