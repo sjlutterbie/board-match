@@ -35,23 +35,70 @@ building new connections and working together to strengthen their communities.
   * [ ] They arrive at the relevant `Dashboard page`
 * [ ] When an **individual** arrives at the `Individual dashboard page`:
   * [ ] The user **can see** the following things:
-    * [ ] If they have **NOT** created a `user profile`:
+    * [ ] If they have **NOT** created a `Individual profile`:
       * TODO
-    * [ ] If they **HAVE** created a `user profile`:
+    * [ ] If they **HAVE** created a `Individual profile`:
       * TODO
   * [ ] The user **can do** the following things:  
-    * [ ] If they have **NOT** created a `user profile`:
+    * [ ] If they have **NOT** created a `Individual profile`:
       * TODO
-    * [ ] If they **HAVE** created a `user profile`:
+    * [ ] If they **HAVE** created a `Individual profile`:
       * TODO
-* [ ] When a **non-profit** arrives at their `Non-profit dashboard page`:
+* [ ] When a **non-profit** arrives at their `Organization dashboard page`:
   * [ ] The non-profit **can see** the following things:
-    * [ ] If they have **NOT** created a `organization profile`:
+    * [ ] If they have **NOT** created a `Organization profile`:
       * TODO
-    * [ ] If they **HAVE** created a `organization profile`:
+    * [ ] If they **HAVE** created a `Organization profile`:
       * TODO
   * [ ] The user **can do** the following things:  
-    * [ ] If they have **NOT** created a `organization profile`:
+    * [ ] If they have **NOT** created a `Organization profile`:
       * TODO
-    * [ ] If they **HAVE** created a `organization profile`:
+    * [ ] If they **HAVE** created a `Organization profile`:
       * TODO
+
+## Element definitions
+
+* The `Homepage`:
+  * TODO
+* The `Dashboard page`:
+  * Is:
+    * The primary user interface for a logged-in user
+        (either individual or non-profit)
+  * Contains:
+    * Three primary content areas:
+      * The `header bar`:
+        * Is:
+          * A horizontal bar across the top of the screen
+        * Contains:
+          * The site title/logo
+          * The `Utilities menu`
+      * The `sideBar menu`:
+        * Is:
+          * A responsive menu (reduceds to collapse/expand icon on small screens)
+          * On large screens:
+            * A column on the left side of the viewport
+        * Contains:
+          * The following list of actions a user can take to interact with the app:
+            * Individual actions:
+              * TODO
+            * Organization actions:
+              * TODO
+* The `Utilities menu`:
+  * Is:
+    * A responsive menu (reduces to collapse/expand icon on small screens)
+  * Contains:
+    * A link to `Account settings` (updates `Main content area`)
+    * A link to `Contact support` (mailto href)
+    * A link to `Sign out` (system action)
+* An `Individual profile`:
+  * Is:
+    * A JSON object
+    * Stored as a document in the app's MongoDB
+  * Contains:
+    * TODO
+* An `Organization profile`:
+  * Is:
+    * A JSON object
+    * Stores as a document in the app's MongoDB
+  * Contains:
+    * TODO
