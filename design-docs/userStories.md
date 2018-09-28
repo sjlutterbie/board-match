@@ -58,21 +58,49 @@ building new connections and working together to strengthen their communities.
     * The `Site header [logged out]`
     * The `App overview`
     * The `Login / Create account form`
-
+  * Layout:
+    * The `Site header`, `App overview`, and `Login / Create account form`
+        are stacked in a single column.
 * The `Dashboard page`:
   * Is:
     * The primary user interface for a logged-in user
     * The static page served at '/dashboard' __(or '/', dynamically?)__
   * Contains:
     * The `Site header [logged-in]`
-    * The `Sidebar menu`
+    * The `Application menu`
     * The `Main content area`
+  * Layout:
+    * Small and Medium:
+      * The `Site header`, `Application menu`, and `Main content area`
+          are stacked in a single column.
+    * Large:
+      * The `Site header` is full-width across the top of the screen
+      * The `Application menu` is a narrow left-hand column
+      * The `Main content area` is the right-hand content area
 
 #### Components
 
 * The `Site header`:
   * Is:
-    * A horizontal bar across the top of the screen
+    * A mixed-use content area
+  * Contains:
+    * The `Site title`
+    * `[logged in]`
+      * The `Utilities menu`
+  * Layout:
+    * `[logged-out]`
+      * The `Site title` is center-aligned
+      * The `Utilities menu` is hidden
+    * `[logged-in]`
+      * The `Site title` is left-aligned
+      * Small and Medium displays:
+        * The `Utilities menu` is collapsed to a right-aligned 'cog icon'
+      * Large displays:
+        * The `Utilities menu` is expanded, and right-aligned
+
+
+
+
   * Contains:
     * The site title/logo
     * The `Utilities menu`
@@ -84,7 +112,7 @@ building new connections and working together to strengthen their communities.
     * A link to `Account settings` (updates `Main content area`)
     * A link to `Contact support` (mailto href)
     * A link to `Sign out` (system action)
-* The `Sidebar menu`:
+* The `Application menu`:
   * Is:
     * A responsive menu (reduceds to collapse/expand icon on small screens)
     * On large screens:
@@ -101,7 +129,7 @@ building new connections and working together to strengthen their communities.
         * Browse/search individuals
 * The `Main content area`:
   * Is:
-    * The bulk of the viewport, minus the `Header bar` and `Sidebar menu`.
+    * The bulk of the viewport, minus the `Header bar` and `Application menu`.
   * Contains:
     * The user's selected data view and data manipulation UI elements
 
