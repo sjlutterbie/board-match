@@ -97,21 +97,21 @@ building new connections and working together to strengthen their communities.
         * The `Utilities menu` is collapsed to a right-aligned 'cog icon'
       * Large displays:
         * The `Utilities menu` is expanded, and right-aligned
-
-
-
-
-  * Contains:
-    * The site title/logo
-    * The `Utilities menu`
-  * TODO: [logged in / logged out] versions
 * The `Utilities menu`:
   * Is:
-    * A responsive menu (reduces to collapse/expand icon on small screens)
+    * A menu
   * Contains:
-    * A link to `Account settings` (updates `Main content area`)
+    * A link to `Account settings` (View component)
     * A link to `Contact support` (mailto href)
-    * A link to `Sign out` (system action)
+    * A link to `Sign out` (controller)
+  * Layout:
+    * Small and medium displays:
+      * A dropdown menu from a collapsed 'cog icon'
+    * Large displays:
+      * A single row of right-aligned text links
+
+////////////// STOPPING POINT ///////////////////
+
 * The `Application menu`:
   * Is:
     * A responsive menu (reduceds to collapse/expand icon on small screens)
@@ -132,6 +132,7 @@ building new connections and working together to strengthen their communities.
     * The bulk of the viewport, minus the `Header bar` and `Application menu`.
   * Contains:
     * The user's selected data view and data manipulation UI elements
+* The `Account settings` view:
 
 ### Models
 
