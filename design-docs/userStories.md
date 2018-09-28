@@ -26,7 +26,7 @@ building new connections and working together to strengthen their communities.
 
 ## User Stories (work in progress)
 
-* [ ] When a user arrives at the `Homepage`:
+* [ ] When a user arrives at the `Landing Page`:
   * [ ] They quickly understand the site's purpose.
   * [ ] They have clear options to log in as an individual, or on behalf of a
           non-profit.
@@ -44,42 +44,39 @@ building new connections and working together to strengthen their communities.
   * [ ] The user **can do** the following things in the `Main content area`:  
     * TODO
 
-## Element definitions
+## MVC Model
 
-* The `Homepage`:
-  * TODO
+### Views
+
+#### Pages
+
+* The `Landing page`:
+  * Is:
+    * The first page a logged-out user sees when visiting the app
+    * The static page initially served at '/'
+  * Contains:
+    * The `Site header [logged out]`
+    * The `App overview`
+    * The `Login / Create account form`
+
 * The `Dashboard page`:
   * Is:
     * The primary user interface for a logged-in user
-        (either individual or non-profit)
+    * The static page served at '/dashboard' __(or '/', dynamically?)__
   * Contains:
-    * Three primary content areas:
-      * The `Header bar`:
-        * Is:
-          * A horizontal bar across the top of the screen
-        * Contains:
-          * The site title/logo
-          * The `Utilities menu`
-      * The `Sidebar menu`:
-        * Is:
-          * A responsive menu (reduceds to collapse/expand icon on small screens)
-          * On large screens:
-            * A column on the left side of the viewport
-        * Contains:
-          * The following list of actions a user can take to interact with the app:
-            * Individual actions:
-              * View/edit profile
-              * Browse/search non-profits
-              * Browse/search board openings
-            * Organization actions:
-              * View/edit profile
-              * Manage openings
-              * Browse/search individuals
-      * The `Main content area`:
-        * Is:
-          * The bulk of the viewport, minus the `Header bar` and `Sidebar menu`.
-        * Contains:
-          * The user's selected data view and data manipulation UI elements
+    * The `Site header [logged-in]`
+    * The `Sidebar menu`
+    * The `Main content area`
+
+#### Components
+
+* The `Site header`:
+  * Is:
+    * A horizontal bar across the top of the screen
+  * Contains:
+    * The site title/logo
+    * The `Utilities menu`
+  * TODO: [logged in / logged out] versions
 * The `Utilities menu`:
   * Is:
     * A responsive menu (reduces to collapse/expand icon on small screens)
@@ -87,6 +84,29 @@ building new connections and working together to strengthen their communities.
     * A link to `Account settings` (updates `Main content area`)
     * A link to `Contact support` (mailto href)
     * A link to `Sign out` (system action)
+* The `Sidebar menu`:
+  * Is:
+    * A responsive menu (reduceds to collapse/expand icon on small screens)
+    * On large screens:
+      * A column on the left side of the viewport
+  * Contains:
+    * The following list of actions a user can take to interact with the app:
+      * Individual actions:
+        * View/edit profile
+        * Browse/search non-profits
+        * Browse/search board openings
+      * Organization actions:
+        * View/edit profile
+        * Manage openings
+        * Browse/search individuals
+* The `Main content area`:
+  * Is:
+    * The bulk of the viewport, minus the `Header bar` and `Sidebar menu`.
+  * Contains:
+    * The user's selected data view and data manipulation UI elements
+
+### Models
+
 * An `Individual profile`:
   * Is:
     * A JSON object
@@ -139,6 +159,10 @@ building new connections and working together to strengthen their communities.
       * TODO
     * Matching characteristics:
       * TODO
+
+### Controllers
+
+
 
 
 ## Scratchpad: Misc. thoughts & notes
